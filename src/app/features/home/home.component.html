@@ -1,0 +1,16 @@
+<app-simple-button *ngIf="showGetFightersButton"
+  [buttonText]="simpleButtonText"
+  [buttonClass]="'btn btn-primary'"
+  (simpleButtonClicked)="getFighters()">
+</app-simple-button>
+
+<div class="p-5 d-flex flex-wrap">
+  <app-fighter-card
+    class="m-2"
+    *ngFor="let fighter of fighters"
+    [fighter]="fighter"
+    (buttonClicked)="goToFighterDetails($event)">
+  </app-fighter-card>
+</div>
+
+

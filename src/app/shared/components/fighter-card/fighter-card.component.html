@@ -1,0 +1,8 @@
+<div class="card" style="width: 18rem;">
+  <img src="..." class="card-img-top">
+  <div class="card-body">
+    <h5 class="card-title">{{ fighter.name }} '{{ fighter.nickname }}' {{ fighter.lastname }}</h5>
+    <p class="card-text">This fighter is an expert in the following discipline: {{ fighter.discipline }}</p>
+    <a (click)="onClick(fighter.id)" class="btn btn-primary">Fighter details</a>
+  </div>
+</div>
